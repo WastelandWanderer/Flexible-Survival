@@ -4,13 +4,292 @@ Gator by Nuku Valente begins here.
 "Adds a gator to Flexible Survival's Wandering Monsters table, With Impreg chance"
 [Description text for this Extension.]
 
-Section 1 - Monster Responses
+Section 1 - Monster Responses and Vore Scenes
+
+Chapter 0 - General Monster Response Handling
 
 [ Use To say for overlong behaviours that would make the table difficult to read and understand. Typically needed if there are a lot of cock/species/cunt checks. ]
 gatordefeat is a number that varies.
 gatorconsent is a number that varies.
+gatorRoutine is a number that varies.
 
 to say gator attack:
+	if (vorelevel is 3) and (scalevalue of player < 5):
+		say "[gatorAttackVore]";
+	else:
+		say "[gatorAttackSex]";
+		
+Chapter 1 - Vore
+		
+to say gatorAttackVore:
+	if gatorconsent is 1:
+		if (hp of player > 0):
+			say "     Raising your hands, you try to signal the herm that you do not wish fight her. 'Aww, you give up?' the reptile croons, seeming a bit disappointed, 'Maybe you need a bit of encouragement.' The voluptious herm grabs you into a hug, squeezing her breasts against your front. Her nipples rub against your front, making her coo in pleasure. The gator's attitude and warmth has you encircle her form with your arms as well, giving into her hug. 'You know, you are right. We don't have to fight, this is so much better.' Both of you spend a while like this in each others arms, content with listening to each other's breath. Your partner nuzzles your neck with her long snout, whispering 'Let's have some fun. Get down for me, darling.'";
+			say "     These words have you feel a warmth permeate your body, you don't want to disappoint your mate. Before you oblige with her command, you start taking your clothes off and you find your lover help you peel your clothes off of one by one. Wanting more of her attention you slow down and eventually she takes off your clothing on her own. When your skin is revealed to the humid air in these tunnels you are being pushed down by your strong lover. You end up on all fours, feeling a bit of the residual gunk on the floor sticking on your hands and knees.";
+		else:
+			say "     When your strength leaves you, you are pushed into the muck. 'Come on, get up again. We're not finshed yet!' You can't, the reptilian herm looming over you has you pinned firmly against the sludge on the floor with her hands on your chest and one of your arms. But her words do encourage you to keep trying, urging you to take hold on her. Unfortunately you can't do much more than reaching to random spots on her also accidentally groping her breasts once. 'Oh, so you want to play around, honey? Why didn't you say so, you know that I can be very... accommodating.' The scaled one starts to echo your touches, groping you and stroking all over your body. While this is not quite what you wantd to signal her, you can't complain about the attention this herm is giving you; one moment her strong hands stroke your back or squeee your buttocks, she's keen in getting to know all of your body.";
+			say "     As if to underline the latter she starts tugging at your clothes, trying to take them off. You oblige and help her to get you out of your wear. When all of your skin is finally free, you feel like the humid air almost sticks to at every spot. Meanwhile your naked back does squish a bit against some of the residual muck on the floor. Not quite content with your position the gator flips you around, making you rest on your hands and knees.";
+		WaitLineBreak;
+		say "     In this position you do feel a bit vulnerable, being out in the open of the tunnels in this positon; any moment another creature could walk up and see you here. But you don't have to worry about that, you do have a strong mate who is now kneeling behind you, groping and squeezing your behind earnestly. 'You have a nice ass.' The sewer herm's hand sneaks towards your crotch ";
+		if cunts of player > 0:
+			say "probing your pussy[if cocks of player > 1] while briefly tracing over your cocks[else if cocks of player > 0] while briefly tracing over your cock[end if]. 'What a nice drooling pussy, perfectly sized for me.' ";
+		else if player is male:
+			say ", tracing [if cock width of player > 0]over your balls briefly[else]below your cock[end if] until she feels around around your perineum. 'No pussy for your mate?' Confused at these words, you do grow a bit red, not sure whether you disappointed your partner or not. 'Don't worry about it, your ass is just fine,' she says with a grin. ";
+		else:
+			say ", looking for something. When her hand traced your crotch and perineum all the way over to your crack, she gives you a confused look. 'Nothing?' You can practically feel your face redden, and you are a bit uncomfortable because of this this ordeal. 'Don't worry about it, your ass is just fine,' she says with a smile. ";
+		if player is submissive:
+			say " Her encouraging words have you press your behind against her. ";
+		say "Your mate all the while had her other hand stroking over her cock, becoming full mast as she was assering your goods. Aligning herself properly, you eventually feel her large tip against your [if cunts of player > 0]lips[else]pucker[end if], eliciting a moan out of your lips. You can't take it any longer and you push against her cock, wanting her to finally get started. The reptile can only grin at your eagerness and grabs your hips, pushing her wide length into you. The cock is pretty large, wide in circumference and it is also pretty long; you're sure that many males would be envious of her formidable manhood.";
+		if cunts of player > 0:
+			if cunt length of player < 8:
+				say "     Unfortunately you are not quite able to handle her entire length, with the first shove you can feel her practically knocking on your entrance into your womb. You beg for her to not go as deep which does have her answer: 'I'm sorry, honey. Sometimes I do get carried away. I'll slow down for you.' And she does follow up on her words, being more mindful of not just shoving her entire, hefty length into your depths.";
+			else:
+				say "     Thankfully you are able to handle her entire length - the gator drives her manhood into your moist cunt in one smooth push. She resides within you for a moment, enjoying your wet walls squeezing against her cock. Despite her not doing anything but resting within you her sizeable length inside does have you breath out deeply - you can practically feel her heartbeat within the little veins pumping on the surface of the gator's shaft. Once she's had enough bonding time with you, she starts fucking you in earnest.";
+			say "     The gator adopts a pace to which you feel comfortable but is still firm and steady, enough to leave you panting and grasping at your mate; you throw your head back as your nerves are on fire from the large cock pummeling your insides. Eventually you moan out in your orgasm, your innards contracting on her shaft. The sudden tightness of you has the wrestler grunt as she tries to keep up her pace, but she does give in and the next moment her impressive mast twitches, unloading her rich, virile semen into you with a roar. ";
+			if cunt length of player < 8:
+				say "You feel stuffed already and her cock just keeps sending one spurt after another into you, practically forcing her load into your womb. What doesn't make it into your deepest corners flows out of you, trickling down on your lover and your legs. When the reptilian's cock is done shooting she pulls out, resulting in quite a bit of her load flowing out of you.";
+			else:
+				say "While her load is enormous you have more than enough space to have all of her fluids be contained within your vagina. But despite that you feel";
+			impregchance;
+		else:
+			say "";
+			mimpregchance;
+		WaitLineBreak;
+		say "     'You know, you don't have to leave. In fact, how about you accompany me for a bit longer...' Before you can inquire any further you suddenly see a large set of jaws over your head.";
+		gatorVore;
+		[Call bound state variant with gatorconsent 1]
+	else:
+		if (hp of player > 0):
+			say "     Raising your hands, you try to signal the herm that you do not wish fight her. 'Aww, you give up?' the reptile croons looking a bit disappointed. But before you can imagine possible ways she can violate you, she towers before you, making you hold your breath. 'Maybe you just know what is good for you - for the both of us. But first...' Suddenly you are tackled to the ground. The gator hardly gives you any leverage to struggle as she pins your arms behind your head. Not being able to fight back you can only watch as your clothes are being torn off one layer at a time. In this position you can feel her rotund and full breasts weigh down on your front,";
+			if breast size of player > 3:
+				say "squeezing against your own bust with both your and her sensitive nipples grazing against one another. The alligator herm gives a satisfied sigh at the stimulation, prompting her to squeeze and rub her globes against yours";
+			else if breast size of player > 0:
+				say "making your own feel small in comparison. Her impressively large and rock-hard nipples rub against your own, coaxing an involuntary out of you. The supple yet firm flesh does keep poking your sensitive, your victor has a large grin plastered across her wide face, content at the fact that she's getting you to moan hands-free";
+			else:
+				say "practically burying you under them. The sewer gators large and rock-hard nipples graze your front, causing you to tremble at the stimulation as her breasts keep swaying back and forth ever so slightly";
+			say ". The weight of your conqueror's bust is lifted off you; you find out why as you see her line up her monstrous erection with your backdoor.";
+		else:
+			say "     The gator grapples you, forcing your upper body to the mucky floor when your body gives up. She's keeping your lower half up with her thick length pressed against your behind. 'That was your all? You are out of your element here, hon,' the gator reprimands you. The sewer dweller rubs against your ass with her thick cock urgently, making you think that she may even try to tear your pants off with her huge length. But her little play is cut short as she impatiently tears off your clothes, scattering the scraps across the grimy floor. Feeling like a piece of meat presented in front of the alligator herm, you can only gaze at her, too weak to free yourself out of the gator's grasp. She does seem to enjoy having a naked, helpless [bodyname of player in lower case] under her, seeing that her uncut, green manhood has grown fully erect.";
+		if cunts of player > 0:
+			say "     'Sorry dear, but your cunt isn't getting any action this time. Can't have you knocked up for what's coming next.' ";
+		else if player is male:
+			say "     'Such a [if scalevalue of player < 4]small[else]pathetic[end if] and weak male. A shame that you ran into me today, maybe if I was in the mood I would've nursed you into a strong warrior on another day.' Why would she say that? ";
+		else if cocks of player > 0:
+			say "     'You were hoping to use [if cocks of player > 1]these[else]this little guy[end if], right? Sorry, but in this world only the strong can hope to breed and spread their offspring. The weak ones have their place under me and I can't have you running around to be used by others.' ";
+		else:
+			say "     'What, there is nothing down there?' The alligator herm feels along your crotch trying to convince herself that you really are sexless. 'You poor soul, you're missing out on so much. But don't worry, I'll make you feel good. Too bad you won't get more opportunities to regret your lack of a cunt.' ";
+		say "The finality her statement has ice running down your spine. A sudden sense of danger has you struggling against her grip. Unfortunately what little fight you've had is quickly quelled by the womanly predator simply pushing her length into you, parting your anal ring. The sewer dweller's cock has already been slickened with her precum or maybe some other fluids, but [if scalevalue of player < 4]it does slides easily into you, the girth of her fuckstick is just right for you[else]despite the lubrication her thick length does meet with resistance from your walls[end if]. Time seems to stop with the gator length being slowly pushed into you; you think you can even feel it pulsing ever so slightly with her heartbeat. It is when she moves one of her hands to your mouth, to have you lick at one of her fingers when you realize that you had been panting heavily this entire time.";
+		WaitLineBreak;
+		say "     Her scaly and clawed finger does taste unpleasant with it having the earthy smell of this area and the muck she was swimming in before. The torture on your taste-buds is short-lived as your partner repositions her hand on your hips. Her cock retreats slowly from your asshole just to have it lunge back within the next moment. Your capturer keeps a slow but steady pace of [if scalevalue of player < 4]reshaping your tight asshole to fit her girthy length[else]fucking your tight hole[end if] making you gasp and moan like a common whore under her. Any threat is forgotten when the herm thrusts into you one last time, her cock sending glob after glob of her thick, virile cum into you.";
+		mimpregchance;
+		say "     The feeling of having your bowels be filled with the gators rich semen does make you feel content and wanting for more but unfortunately the gator herm's dick just retreats out of you and you didn't reach your orgasm yet. Before you can complain that she did not get you off she grabs you into a bearhug, getting you back to your feet. Her soft breasts cushion her forceful grind somewhat but they don't protect you from her arms tightly pressing into your back. Meanwhile you can feel her copious load leaking out of you, making you feel that she's practically squeezing her load out of you. This rough treatment has you groan in discomfort ";
+		if player is submissive:
+			say "but you don't struggle against her, letting her grind her rough skin against you. 'Such an obedient little pet. Let me put you in your proper place.' ";
+		else:
+			say "and you writhe within her grasp, trying to leverage some space. 'Ah, ah, ah. Can't have you struggling now, can we? But, I know of a way to keep you pinned!' ";
+		say " Anticipating of what's coming next, thick tail swishes left and right behind the heavy alligator herm. 'You know, beating you like a small, little punching bag and filling you up did work me up. And any good exercize makes a woman hungry.' The gravity of the situation sinks in you as you can see her lick her chops slowly with her long tongue. 'Come to mommy!' You see your imminent doom approaching; wide open alligator jaws are diving down, engulfing your head entirely. [if player is submissive]Despite the situation you cannot bring yourself to struggle[else]You know you have to get out of there but your body feels weak from the fight and the recent orgasm[end if]. The herm moans in a satisfied fashion as she tastes your head with her wide, large tongue. Any hopes you had of her not going further are crushed as you are being pushed further into her throat.";
+		WaitLineBreak;
+		say "     Even if you wanted to look down her gullet you can't as the light is being blocked by her body. Instead you get to hear her loud breath as you are being brought closer to her throat and your sweat on your face is washed away by copious amounts of saliva. Soon you are lifted off your feet into the air and keep sliding down. Outward her throat is probably appearing distended as you are slowly crawling down her throat. Once you made a bit of way into her your predator lifts you bolt upright to let gravity do the rest of the work. Just as she intended it does as you sink in a faster pace down into her until you finally curl up in a slightly bigger chamber within her. The stomach smells acrid and keeps squeezing against you - leaving you hardly any room to do anything.";
+		gatorVore;
+		[Call bound state variant with gatorconsent 0]
+		
+Chapter 2 - Bound State
+	
+to gatorVore:
+	now lustatt is libido of player;
+	now calcnumber is -1;
+	let trixieexit be 0;
+	while trixieexit is 0:
+		if clearnomore is 0, clear the screen;
+		if hp of player > 0 or humanity of player < 50:
+			now obliging is true;
+		checkboundrecover;
+		if lustatt > 99:
+			say "     Lust overcomes your sense of danger; the situation you're in is completely forgotten as you reach for your ";
+			if cocks of player > 0:
+				say "cock, stroking and panting in these confines. As you are pumping yourself to your orgasm the rest of your body is being massaged and worked by the stomach of this mighty predator. Crying out in your climax, you cum, shooting string after string everywhere into the little space that you do have, marinating all of yourself within your salty load.";
+			else if cunts of player > 0:
+				say "vagina, sinking your digits into your own folds, fingering yourself in this prison. As you are pleasuring yourself until your orgasm the rest of your body is being massaged and worked by the stomach of this mighty predator. Crying out in your climax, you release your juices into the little space that you do have, practically marinating yourself.";
+			else:
+				say "chest, trying to pinch your sensitive spots. Not feeling content with just exploring your own body you try to move, rubbing yourself more on these slimy walls; you feel the sticky and acrid walls sticking and massaging every small crease of your skin. Eventually you do grow tired and get off your high with your zealous self-stimulation.";
+			if libido of player > 25, decrease libido of player by (libido of player / 10) + 1;
+			now lustatt is libido of player;
+			if struggleatt > 0, decrease struggleatt by 1;
+			if enduring is true:
+				decrease humanity of player by 8 + (psycheadjust * 2);
+			else:
+				decrease humanity of player by 15 + (psycheadjust * 5);
+		increase boundcounter by 1;
+		if boundcounter is 4:
+			say "     The wyvern's body churns and [ghe] seems to have reached a point where [ghe] can keep you down. It seems your prolonged presence here has given you no other choice but to leave the beast through the other way out.";
+			now boundmod is 1;
+		if boundsegment is not 1:
+			if (enduring is true and a random chance of 2 in 5 succeeds) or (enduring is false and a random chance of 4 in 5 succeeds):
+				increase hunger of player by 1;
+				increase thirst of player by 2;
+			else if enduring is false or (enduring is true and a random chance of 2 in 3 succeeds):
+				increase thirst of player by 1;
+			say "     Bathed in saliva and utter darkness, you're lost in a slick, constraining sea of flesh, trapped in the belly of a wyvern. [one of]Your captor growls lowly in satisfaction, sending vibrations to tremor across your vulnerable form[or]Your body tingles as its slowly being drained[or]You become disoriented as you find yourself tussled about from any movement by the beast[at random]. You imagine your only active option is to [bold type]S[roman type]truggle enough until they let you go, else you can [if obliging is true][bold type]O[roman type]blige[else][bold type]A[roman type]bide[end if] them, or [if boundrecover is true][bold type]R[roman type]ecover from[else][bold type]E[roman type]ndure[end if] these questionable circumstances.[line break]";
+		else:
+			say "     Strong walls of the wyvern's gullet squeezing all around you, it's a task simply to keep yourself from reaching your ultimate destination. You imagine your only active option is to [bold type]S[roman type]truggle enough until they let you go, else you can [if obliging is true][bold type]O[roman type]blige[else][bold type]A[roman type]bide[end if] them, or you can try to [if boundrecover is true][bold type]R[roman type]ecover[else][bold type]E[roman type]ndure[end if][line break] and succumb to your inevitable fate![line break]";
+		now enduring is false;
+		say "[bold type]1[roman type] - [link]Struggle[as]1[end link][line break][run paragraph on]";
+		say "[bold type]2[roman type] - [link][if obliging is true]Oblige[else]Abide[end if][as]2[end link][line break][run paragraph on]";
+		say "[bold type]3[roman type] - [link][if boundrecover is false]Endure[else]Recover[end if][as]3[end link][line break][run paragraph on]";
+		say "Sanity: [humanity of player]/ 100	Lust: [lustatt]/100	Hunger: [hunger of player]	Thirst: [thirst of player]	Struggle: [wyvstrugglebar][line break][run paragraph on]";
+		if humanity of player < 1:
+			repeat with y running from 1 to number of filled rows in table of random critters:
+				choose row y in table of random critters;
+				if name entry is "Sewer Gator":
+					now monster is y;
+					break;
+			now bodyname of player is "Sewer Gator";
+			now facename of player is "Sewer Gator";
+			now tailname of player is "Sewer Gator";
+			now skinname of player is "Sewer Gator";
+			now cockname of player is "Sewer Gator";
+			now tail of player is tail entry;
+			now face of player is face entry;
+			now skin of player is skin entry;
+			now body of player is body entry;
+			now cock of player is cock entry;
+			now voreloss is true;
+			now trixieexit is 1;
+			end the story saying "You became the Sewer Gator's meal!";
+		else:
+			let k be 0;
+			now keychar is "INVALID";
+			change the text of the player's command to "";
+			while keychar is "INVALID":
+				now k is the chosen letter;
+				translate k;
+				if the player's command matches "[number]":
+					now keychar is "[number understood]";
+			if keychar in lower case exactly matches the text "s" or keychar in lower case exactly matches the text "1" or keychar in lower case exactly matches the text "return" or keychar in lower case matches the text "struggle":
+				say "[line break]";
+				increase struggleatt by 1;
+				if boundcounter > 0, decrease boundcounter by 1;
+				if boundsegment is 1:
+					if struggleatt is 1:
+						say "     You manage to start forcing yourself back up through [ghis] gullet, getting yourself turned around to face your exit. You look like you're about to be free, the outside's [if daytimer is day]daylight[else]night lights[end if] visible through the beast's maws, before [ghe] rears [ghis] head once more, pulling you back into the depths of [ghis] gullet. You've been set back, but you at least made some headway.";
+						increase lustatt by 7 + (lustadjust * 2);
+						wyvhumanityroll;
+						wait for any key;
+					else:
+						say "     Fighting with the wyvern's endeavour for what seems like forever, [ghe] just gets fed up with your protests, throat's muscles -- once pulling you further in -- now push you back out, the wyvern hacking you out until you fall onto the ground, landing in a puddle of [ghis] saliva. Screeching down at you, you still manage to get to your feet and dive over to someplace where you can hide.";
+						say "     [if WYVGEN is 1]She[else]He[end if] only pursues you briefly, trying to retrieve you once more, but [ghe]'s clearly frustrated enough with you that [ghe] eventually just gives up, turning off and taking flight once more to find easier prey. Catching your breath for a moment, you eventually, cautiously step out from hiding, going back to your own business once it's clear you're in no immediate danger.";
+						cleanboundmemory;
+						now pewtergenitalcap is 0;
+						now trixieexit is 1;
+						follow the turnpass rule;
+				else:
+					if struggleatt < 3:
+						say "     You struggle to free yourself of the wyvern's stomach, [if struggleatt is 1]barely registering for the beast[else]the beast beginning to growl in discontent.[run paragraph on].[run paragraph on][end if].";
+						increase lustatt by 7 + (lustadjust * 2);
+						wyvhumanityroll;
+						wait for any key;
+					else:
+						if boundmod is not 1:
+							say "     Unable to keep you down any longer, the belly's slick walls constrict around you squeezing you back up from whence you came; however, not intent on letting [ghis] recent meal off that easy, [ghe] keeps you firmly confined to [ghis] gullet, desperately trying to swallow you back down!";
+							now tempnum2 is 1;
+							wait for any key;
+							now boundsegment is 1;
+							now struggleatt is 1;
+						else:
+							say "     Your continued protests eventually causes the wyvern's stomach to groan and churn, your quivering prison soon constricting around your [bodytype of player] form you squeeze you out, downwards into the beast's fleshy tubes. Your captor rumbling lowly in displeasure, you're strung along these tight, slick confines until you're greeted once more with the dry, open air.";
+							say "     The rest of you following quickly thereafter, you collapse unceremoniously onto the ground with an audibly wet sound. Taking a moment to acclimate to the outside world once more, you're eyes fall on the wyvern, who can only snort at you in disdain before turning to take flight once more, no doubt having had enough of your trouble. It takes you a while to clean yourself off and make your less-than-dignified escape.";
+							cleanboundmemory;
+							now trixieexit is 1;
+							follow the turnpass rule;
+				next;
+			else if (obliging is true and (keychar in lower case exactly matches the text "o" or keychar in lower case matches the text "oblige")) or (obliging is false and (keychar in lower case exactly matches the text "a" or keychar in lower case matches the text "abide")) or keychar in lower case exactly matches the text "2":
+				say "[line break]";
+				if obliging is true:
+					if boundsegment is 1:
+						say "     You find yourself actively submitting to the wyvern's will. In mere seconds, the beast intent on exploiting this, you're plunged[if tempnum2 is 1] back[end if] into the depths of [ghis] stomach with a single gulp, the beast growling in approval of its [if tempnum2 is 1]returning[else]new[end if] meal. Your body tingles as you begin to feel yourself being slowly drained by these [if tempnum2 is 1]familiar[else]new[end if] confines.";
+						now tempnum2 is 0;
+						now boundsegment is 0;
+					else:
+						say "     You're driven to submit to your inevitable fate as the wyvern's meal. Your captor [one of]choosing to mull around for a bit as [ghe] drains you[or]taunting you with [ghis] talon's caress over [ghis] slightly bulging belly[or]half-heartedly pursuing other potential victims who have the proper sense to run and hide[at random].";
+					increase lustatt by 14 + (lustadjust * 4);
+				else:
+					if boundsegment is 1:
+						say "     You find yourself unwilling to protest against the wyvern's will. In mere seconds, the beast intent on exploiting this, you're plunged[if tempnum2 is 1] back[end if] into the depths of [ghis] stomach with a single gulp, the beast growling in approval of its [if tempnum2 is 1]returning[else]new[end if] meal. Your body tingles as you begin to feel yourself being slowly drained by these [if tempnum2 is 1]familiar[else]new[end if] confines.";
+						now tempnum2 is 0;
+						now boundsegment is 0;
+					else:
+						say "     You abide your fate as a meal for the wyvern for a little longer. Your captor [one of]choosing to mull around for a bit as [ghe] drains you[or]taunting you with [ghis] talon's caress over [ghis] slightly bulging belly[or]half-heartedly pursuing other potential victims who have the proper sense to run and hide[at random].";
+					increase lustatt by 7 + (lustadjust * 2);
+				say "[line break]";
+				wyvhumanityroll;
+				wait for any key;
+				next;
+			else:
+				say "[line break]";
+				now enduring is true;
+				if boundrecover is true:
+					if boundsegment is 1:
+						say "     With a brief flash of insight, you're able to find a glimpse of mental clarity within these confines, recovering a small portion of your lost humanity";
+						if a random chance of 1 in 2 succeeds:
+							say ". However, the beast exploits this moment of vulnerability, plunging you [if tempnum2 is 1] back[end if] into the depths of [ghis] stomach with a single, powerful gulp, the beast growling in approval of its [if tempnum2 is 1]returning[else]new[end if] meal. Your body tingles as you begin to feel yourself being slowly drained by these [if tempnum2 is 1]familiar[else]new[end if] confines.";
+							now tempnum2 is 0;
+							now boundsegment is 0;
+						else:
+							say ". Given your stubbornness, he seems to have some brief difficulty swallowing you down, buying you some time as his powerful muscles squeezes tightly against you.";
+					else:
+						say "     With a brief flash of insight, you're able to find a glimpse of mental clarity within these confines, recovering a small portion of your lost humanity.";
+					increase humanity of player by 3;
+					if a random chance of 2 in 3 succeeds:
+						decrease thirst of player by 2;
+						decrease hunger of player by 1;
+					else:
+						decrease thirst of player by 1;
+					now boundrecover is false;
+					if humanity of player > 100, now humanity of player is 100;
+				else:
+					if boundsegment is 1:
+						say "     You actively attempt to endure the wyvern's influence on you";
+						if a random chance of 1 in 2 succeeds:
+							say ". However, the beast manages to overcome your resistance, you're plunged[if tempnum2 is 1] back[end if] into the depths of [ghis] stomach with a single, powerful gulp, the beast growling in approval of its [if tempnum2 is 1]returning[else]new[end if] meal. Your body tingles as you begin to feel yourself being slowly drained by these [if tempnum2 is 1]familiar[else]new[end if] confines.";
+							now tempnum2 is 0;
+							now boundsegment is 0;
+						else:
+							say ". Given your stubbornness, he seems to have some brief difficulty swallowing you down, buying you some time as his powerful muscles squeezes tightly against you.";
+					else:
+						say "     You oblige your fate as a meal for the wyvern for a little longer. Your captor [one of]choosing to mull around for a bit as [ghe] drains you[or]taunting you with [ghis] talon's caress over [ghis] slightly bulging belly[or]half-heartedly pursuing other potential victims who have the proper sense to run and hide[at random].";
+				say "[line break]";
+				increase lustatt by 3 + lustadjust;
+				wyvhumanityroll;
+				wait for any key;
+				next;
+			say "Invalid action.";
+
+[gatorconsent is 0
+Idle messages
+You are within the sewer gator's gullet. You can faintly hear her [one of]breath[or]heartbeat[or]bloodflow[or]muscles move[at random] but the most predominant sounds come from the walls sloshing fluids around as they squeeze against you.
+You feel a pressure against the walls. It's as if one side of the walls keep stroking along you lovingly; the gator is probably stroking her belly satisfied with her recent meal.
+Suddenly the stomach walls yield a little bit, giving you more space. But you feel that your body bobs around with the stomach. She must have gotten up, walking around with you.
+As you are bobbing back and forth, you feel the hand again, pressing softly against your hide.
+The movement of her stomach stops and you feel yourself being pressed against another side of this chamber. While it is hard to orient yourself in this chamber you do have the feeling that your predator just lied down.
+The breathing in the background stops and the sticky walls seem more relaxed. This changed behavior does seem to compel you to rest instead of fighting her walls.
+Your weight is shifted again and you feel as if you're being elevated. The gator must have gotten up again.
+
+Struggle messages
+Getting an idea you start moving your hands rapidly along the walls. You even start doing that with your feet. She does seem to feel you in here, so maybe she's sensitive enough to be tickled.
+You try to push your arms out and find one of the openings to get out of your dark prison.
+You push your legs and feet out, trying to give yourself more space. The walls push back, making this work more strenuous.
+With a grunt you start pushing into all directions with your arms and legs. Once you have made a bit a of space you wind up with your leg to kick against her walls. You think you hear a muffled 'Urgh. Hey, no kicking in there!'
+Obliging messages
+You decide to rest for a moment to regain your strength.
+For some reason you feel compelled to relax, letting these walls massage your entire body.
+You feel calm, you even end up touching yourself as you let the works and acids work your body.
+Success messages
+She seemed to have enough and you feel the walls moving to get you up. Head first you enter the esophagus again and slowly snake your way up. While you are climbing back up, you do hear retching sounds. When your head peeks out of her throat, you feel grateful to whatever deity or god might be watching over you; the sight of her mouth does feel exhilerating; you have a chance to get out. You squeeze your arms out of her throat and reach for her jaws, trying to pull yourself out. Surprisingly enough you don't need to pull as much as the gator reaches for your arms and pulls you out instead. You hit the floor in a puddle of saliva and her stomach acids and feel utterly drained by this entire experience. Thankfully you don't have to worry about fighting the gator in this weakened state as she stands huddled over in front of, coughing and in pain from your struggles inside her.
+Before she recovers or gains any other ideas to keep you pinned you get back up and walk away, leaving the coughing and pained herm back. On your way away from the gator you find your clothes and gear thrown away to the side.]
+
+Chapter 3 - Vanilla Scenes
+
+to say gatorAttackSex:
 	say "'Weak little thing. Too bad, I thought you had more in you,' she growls as she pushes you to the ground roughly. 'I suppose I can still have some fun with you...' She crawls up on top of you, peeling off your clothes as she goes. You try to wriggle free, but a soft but painful bite to your shoulder stills you. She wraps her arms around you and hefts your ass up into the air. Her angry looking manhood juts up from her groin, dripping thin streams of lubricant as she moves you into position.";
 	if waiterhater is 0, wait for any key; [skips waiting if it's not wanted]
 	if waiterhater is 0 and hypernull is 0, LineBreak; [adds a break after the 'more']
@@ -24,7 +303,6 @@ to say gator attack:
 		if waiterhater is 0, wait for any key; [skips waiting if it's not wanted]
 		if waiterhater is 0 and hypernull is 0, LineBreak; [adds a break after the 'more']
 		say "Your forms shudder together as her balls slap against you once more, and rest against you as she unloads into your bowels, filling you with her hot cream. Quite suddenly, she shoves you forward.  Your head hits the ground, and when you come to, she has departed, probably to hunt something, or someone, else.[mimpregchance]";
-
 
 To say gator loss:
 	if gator den is unknown:
@@ -97,13 +375,19 @@ when play ends:
 	if bodyname of player is "Sewer Gator":
 		if humanity of player < 10:
 			if gatorconsent is 1:
-				say "You settle down with that gator, your mind ensnared by her enchanting voice. She welcomes you with open arms and conditions you with love and affection, soon making you a perfectly obedient little pet for her.";
-				if cocks of player > 0:
-					say "She sates her female urges on your cock, riding it whenever she gets in the proper mood. Her frequent dalliances result in children, but they are feral at birth, and usually flee off to parts unknown. It does not seem to bother her greatly.";
-				if cunts of player > 0:
-					say "When her hunting goes poorly, you prove to be a very skilled outlet for her frustration. She rides you in every position over the rest of your life, filling your belly with child after child, squealing snapping beasts that stay only long enough to get a rough meal from your chest before fleeing into the wilds.";
+				if voreloss is true:
+					say "REMOVE ME";
+				else:
+					say "You settle down with that gator, your mind ensnared by her enchanting voice. She welcomes you with open arms and conditions you with love and affection, soon making you a perfectly obedient little pet for her.";
+					if cocks of player > 0:
+						say "She sates her female urges on your cock, riding it whenever she gets in the proper mood. Her frequent dalliances result in children, but they are feral at birth, and usually flee off to parts unknown. It does not seem to bother her greatly.";
+					if cunts of player > 0:
+						say "When her hunting goes poorly, you prove to be a very skilled outlet for her frustration. She rides you in every position over the rest of your life, filling your belly with child after child, squealing snapping beasts that stay only long enough to get a rough meal from your chest before fleeing into the wilds.";
 			else:
-				say "Your fragile mind snaps and you growl, seeking a nice dark place to hide. You prey on mutants and humans foolish enough to come too close, grabbing them in your great jaws and hauling them to your den to violate. If your hunger is too great, they never leave. Fortunately, this is only about one in five, the others are left dizzy with pleasure, but unharmed. Humans are mutated, but most leave, except one. Even snapping at them couldn't get them to budge. Eventually you gave up, and gained a partner.";
+				if voreloss is true:
+					say "     The stomach's acids and the lack of air having their toll on your body finally cause you to black out. You never get any more moment to see what happens next, as your body is slowly dismantled; the outward bulge of the gator slowly receding. The gator sighs contently when she squeezes and strokes your body through her bulge for the final moments before any trace of you ever existing melted into her body.";
+				else:
+					say "Your fragile mind snaps and you growl, seeking a nice dark place to hide. You prey on mutants and humans foolish enough to come too close, grabbing them in your great jaws and hauling them to your den to violate. If your hunger is too great, they never leave. Fortunately, this is only about one in five, the others are left dizzy with pleasure, but unharmed. Humans are mutated, but most leave, except one. Even snapping at them couldn't get them to budge. Eventually you gave up, and gained a partner.";
 		else:
 			if gatorconsent is 1:
 				say "As the military mobilizes into the city, you hurry back to your sweet gator's arms. You embrace as equals, and begin telling her your plan. She looks doubtful at first, but eventually you talk her out of her sewer home. You are both rescued and whisked away back to civilization. She quickly warmed to having so many warm bodies around, and settled in to get a formal education, with you at her side for encouragement, support, and great sex.[line break][line break]She becomes a therapist. Her hypnotic voice and her eagerness to meet new people drives her success, and she never leaves your side either. It is a good life, spent together, successful.";
